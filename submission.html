@@ -1,18 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Submission Register</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>PROJECT</h2>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="equipment.html">Equipment</a>
+
+<a href="submission.html">Submission</a>
+
+<a href="#" onclick="logout()">Logout</a>
+
+</div>
+
+<div class="main">
+
 <h1>Submission Register</h1>
 
 <table>
 
 <thead>
+
 <tr>
-<th>No</th>
-<th>Submission</th>
+<th>Submission No</th>
+<th>Title</th>
 <th>Status</th>
 </tr>
+
 </thead>
 
 <tbody id="submissionBody">
+
 </tbody>
 
 </table>
 
+</div>
+
 <script src="js/submission.js"></script>
+
+<script>
+
+function logout(){
+
+localStorage.removeItem(
+"loggedIn"
+);
+
+window.location.href =
+"index.html";
+
+}
+
+</script>
+
+</body>
+</html>
