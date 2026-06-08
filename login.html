@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Project Login</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h2>Building Expansion Dashboard</h2>
+
+<input type="text" id="user" placeholder="Username">
+
+<input type="password" id="pass" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+</div>
+
+<script>
+
+function login(){
+
+const user=document.getElementById("user").value;
+const pass=document.getElementById("pass").value;
+
+if(user==="admin" && pass==="admin123")
+{
+localStorage.setItem("logged","true");
+window.location="dashboard.html";
+}
+else
+{
+alert("Invalid Login");
+}
+}
+
+</script>
+
+</body>
+</html>
