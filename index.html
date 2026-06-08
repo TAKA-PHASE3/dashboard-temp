@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Building Expansion Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+<div class="login-card">
+
+<h1>Building Expansion Dashboard</h1>
+
+<p>Please login to continue</p>
+
+<input
+type="text"
+id="username"
+placeholder="Username">
+
+<input
+type="password"
+id="password"
+placeholder="Password">
+
+<button onclick="login()">
+Login
+</button>
+
+<p class="hint">
+Username: admin<br>
+Password: admin123
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function login(){
+
+let user =
+document.getElementById("username").value;
+
+let pass =
+document.getElementById("password").value;
+
+if(user==="admin" && pass==="admin123"){
+
+localStorage.setItem(
+"loggedIn",
+"true"
+);
+
+window.location.href =
+"dashboard.html";
+
+}
+else{
+
+alert(
+"Invalid Username or Password"
+);
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
