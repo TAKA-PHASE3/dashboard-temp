@@ -1,0 +1,20 @@
+[
+  {
+    "id":"AHU-01",
+    "description":"Air Handling Unit",
+    "qty":2,
+    "status":"Installed"
+  },
+  {
+    "id":"MAU-01",
+    "description":"Make-Up Air Unit",
+    "qty":1,
+    "status":"Pending"
+  },
+  {
+    "id":"FFU-01",
+    "description":"Fan Filter Unit",
+    "qty":50,
+    "status":"Delivered"
+  }
+]
