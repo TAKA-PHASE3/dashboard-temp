@@ -1,0 +1,46 @@
+body{
+margin:0;
+font-family:Arial;
+background:#f5f7fa;
+}
+
+.sidebar{
+position:fixed;
+width:250px;
+height:100%;
+background:#31353d;
+padding:20px;
+}
+
+.sidebar a{
+display:block;
+padding:10px;
+color:white;
+text-decoration:none;
+}
+
+.content{
+margin-left:270px;
+padding:20px;
+}
+
+.card{
+display:inline-block;
+width:250px;
+background:white;
+padding:20px;
+margin:10px;
+border-radius:8px;
+box-shadow:0 2px 6px rgba(0,0,0,.1);
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+}
+
+th,td{
+border:1px solid #ddd;
+padding:10px;
+}
